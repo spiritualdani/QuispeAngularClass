@@ -1,0 +1,24 @@
+
+<h1>Mensaje Aleatorio</h1>
+
+<div *ngIf="contenidoState" style="border-style: dotted" >
+    <br><br>
+<div *ngIf="ocultarButton">
+<button (click)="getMensaje()">Mensaje</button><br> 
+</div><br>
+<div *ngIf="ocultar"><p appMensaje>{{mensaje|json}}</p></div><br>
+<button (click)="hideMessage()">(2) Segundo</button><br><br>
+<button (click)="hideButton()">(3) Tercer </button><br><br>
+
+<div *ngIf="imagenState">
+        <img src="./assets/imagenes/Lion.jpg" width="100">
+</div>
+
+
+<button (click)="mostrarImagen()">(4) Cuarto</button>
+<br><br>
+</div>
+<br><br>
+<button (click)="hideContenido()">(5) Quinto</button>
+
+
